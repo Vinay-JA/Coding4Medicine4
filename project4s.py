@@ -24,7 +24,7 @@ def readsequence(filepath):
         genomesequence = file.read().replace('\n','')
     return genomesequence
 def main():
-    filepath = '/Users/vinayjagtiani/Code/Coding4Medicine/Project 4/Text.txt'
+    filepath = './Text.txt'
     genomesequence = readsequence(filepath)
     recognitionsequence = "GACNNNNNGTC"
     numsites = countRestrictionSites(genomesequence,recognitionsequence)
